@@ -25,7 +25,7 @@ def track_rankings(location: str, search_dict: Dict[str, str], api_key: str):
                 "hl": "en",
                 "gl": "us",
                 "google_domain": "google.com",
-                "num": 50  # depth ~50 results
+                "num": 100  # depth ~100 results
             })
             
             rank = None
@@ -55,10 +55,10 @@ def track_rankings(location: str, search_dict: Dict[str, str], api_key: str):
     return results_dict
 
 if __name__ == "__main__":
-    my_location = "Austin, Texas, United States"
+    my_location = "Toronto, Ontario, Canada"
     
     my_search_dict = {
-        "wiki": "https://www.wikipedia.org",
+        "Industrial Fire and Safety Services Canada": "https://totalgroup.ca/",
     }
     
     # Ideally should use an env variable for API key
